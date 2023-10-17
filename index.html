@@ -32,7 +32,7 @@
 						<header class="major">
 							<h2>This is my portfolio website.</h2>
 						</header>
-						<p>I am a master's graduate in Biomedical Data Science from Imperial College London. I have done projects mostly in Natural Language Processing and Computer vision. I also have a Bachelor's in Electrical Engineering. I aspire to create ML applications and use my wide tech knowledge to create exciting things. On this page, you can look at some of my projects and interests, find my resume, and my contact info.</p>
+						<p> Working as a Data Scientist. I am a master's graduate in Biomedical Data Science from Imperial College London. I also have a Bachelor's in Electrical Engineering. I aspire to create ML applications and use my wide tech knowledge to create exciting things. You can look at some of my projects and interests on this page, and find my resume, and contact info.</p>
 						<ul class="actions">
 							<li><a href="assets/resume/Filip_Makraduli_CV.pdf" class="button" download rel="noopener noreferrer" target="_blank">Download CV</a></li>
 						</ul>
@@ -42,11 +42,23 @@
 					<section id="two">
 						<h2>Recent Projects</h2>
 						<div class="row">
-                            
+							
+                            				<article class="col-6 col-12-xsmall work-item">
+								<a href="images/spotify.png" class="image fit thumb"><img src="images/spotify.png" alt="" /></a>
+								<h3>AI based song recommendations </h3>
+								<p> A song recommendation tool which uses an indexing engine FAISS to create vector embeddings of song descriptions that match the vibe of a user. 
+								The training dataset was specifically created for the purpose of the project. It uses a Siamese transformer network to capture the sentiment of the songs.
+								</p>
+								<ul class="actions">
+									<li><a href="https://github.com/fm1320/song-vibe" class="button small" download rel="noopener noreferrer" target="_blank">Link</a></li> 
+									<li><a href="https://mood-music.streamlit.app/" class="button small" download rel="noopener noreferrer" target="_blank">Link</a></li>
+								</ul>
+							</article>
+							
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/vit.png" class="image fit thumb"><img src="images/vit.png" alt="" /></a>
 								<h3>Image to text similarity</h3>
-								<p> This is a small Flask API application with one API that serves a Pytorch model which calculates similarity between text and image captions. 
+								<p> This is a small Flask API application with one API serving a Pytorch model that calculates similarity between text and image captions. 
 								The models used are from the hugging face library and use the ViT-GPT2 transformer model for image captioning and Sentence transformers for encoding the text sentences. 
 								The image example is from the Flickr8k dataset. The two models are pre-trained and wrapped within a Pytorch module in order to enable training both models as a one 
 								Pytorch model. A training example for the sentence transformer is also given for fine-tuning.
